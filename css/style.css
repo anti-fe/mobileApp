@@ -26,6 +26,10 @@ a {text-decoration: none; color: var(--color-black)}
     background-color: rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(20px);
     padding: 25px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
 }
 .header__content {
     display: flex;
@@ -108,5 +112,60 @@ a {text-decoration: none; color: var(--color-black)}
     background-color: #3f6ee6;
 }
 .header__btn:focus {
+    outline: 3px solid #b3c9ff;
+}
+.main {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+.main__wrapper {
+    width: 100%;
+    margin-top: -150px
+}
+.main__bg-img {
+    position: absolute;
+    top: -10px;
+    right: 0px;
+    z-index: -2;
+}
+.main__title {
+    color: var(--color-accent);
+    max-width: 870px;
+    line-height: 120%;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+.main__under-title {
+    max-width: 655px;
+    color: var(--color-black);
+    line-height: 130%;
+    margin-bottom: 50px
+}
+.main__btn {
+    font-weight: 400;
+    cursor: pointer;
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+    background-color: var(--color-accent);
+    padding: 15px 25px;
+    font-size: 18px;
+    transition: background-color .2s ease;
+    -webkit-transition: background-color .2s ease;
+    -moz-transition: background-color .2s ease;
+    -ms-transition: background-color .2s ease;
+    -o-transition: background-color .2s ease;
+}
+.main__btn:hover {
+    background-color: #3f6ee6;
+}
+.main__btn:focus {
     outline: 3px solid #b3c9ff;
 }
