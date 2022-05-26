@@ -9,6 +9,7 @@
 :root {
     --color-black: #0C0C0C;
     --color-accent: #5E8AFD;
+    --color-lightGray: #FCFCFC;
 }
 
 h1, h2 {font-family: 'Exo 2', sans-serif}
@@ -19,12 +20,12 @@ button, a {font-size: 18px}
 a {text-decoration: none; color: var(--color-black)}
 
 .container{
-    max-width: 1680px;
+    max-width: 86%;
     margin: 0 auto;
 }
 .header {
     background-color: rgba(255, 255, 255, 0.2);
-    backdrop-filter: blur(20px);
+    backdrop-filter: blur(5px);
     padding: 25px 0;
     position: fixed;
     top: 0;
@@ -187,6 +188,7 @@ a {text-decoration: none; color: var(--color-black)}
     -ms-border-radius: 20px;
     -o-border-radius: 20px;
     padding: 50px;
+    margin-bottom: 200px;
 }
 .about-company__info {
     display: flex;
@@ -226,3 +228,61 @@ a {text-decoration: none; color: var(--color-black)}
     color: var(--color-accent);
     font-size: 80px;
 }
+.advantages {
+    margin-bottom: 200px;
+}
+.advantages__title {
+    margin-bottom: 90px;
+}
+.advantages__items {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+.advantages__btn {
+    width: 100%;
+    border: none;
+    background-color: var(--color-lightGray);
+    color: #B3B3B3;
+    font-weight: bold;
+    padding: 25px 0;
+    cursor: pointer;
+    transition: all .1s ease;
+    -webkit-transition: all .1s ease;
+    -moz-transition: all .1s ease;
+    -ms-transition: all .1s ease;
+    -o-transition: all .1s ease;
+}
+.advantages__btn:not(:last-child) {
+    border-right: 1px solid rgba(179, 179, 179, 0.4);
+}
+.advantages__btn:hover {
+    background-color: #f1f1f1;
+}
+.advantages__btn-active {
+    background-color: var(--color-accent);
+    color: #fff;
+}
+.advantages__btn.advantages__btn-active:hover {
+    background-color: #3f6ee6;
+}
+.advantages__content {
+    position: relative;
+}
+.advantages__content-block {
+    margin-top: 90px;
+    display: flex;
+}
+.advantages__content-img {
+    margin-right: 5%;
+}
+.advantages__content-text {
+    line-height: 150%;
+    max-width: 1200px;
+    margin-top: 30px;
+}
+.advantages__content_hidden {
+    position: absolute;
+    opacity: 0;
+}
+

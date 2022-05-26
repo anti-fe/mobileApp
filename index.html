@@ -15,9 +15,9 @@
     <!-- HEADER -->
     <header class="header">
         <div class="header__content container">
-            <div class="logo">
+            <a href='#first-screen' class="logo">
                 <h3 class="logo__text">Mobile<span class="logo__text_blue">App</span></h3>
-            </div>
+            </a>
             <nav class="header__menu menu">
                 <ul class="menu__wrapper">
                     <li class="menu__text"><a href="#" class="menu__link">О компании</a></li>
@@ -34,7 +34,7 @@
     </header>
     <img class="main__bg-img" src="img/main-img.png" alt="bg">
     <!-- MAIN -->
-    <main class="main">
+    <main class="main" id="first-screen">
         <div class="main__wrapper container">
             <h1 class="main__title">Создание и сопровождение мобильных приложений </h1>
             <p class="main__under-title">Повышаем эффективность и спрос на мобильные приложения в результате оперативной работы квалифицированных сотрудников</p>
@@ -58,9 +58,44 @@
             </div>
         </div>
     </section>
-
+    <!-- ADVANTAGES -->
+    <h2 class="advantages__title section-title container">Преимущества</h2>
+    <section class="advantages container">
+        <div class="advantages__items">
+            <button class="advantages__btn advantages__btn-active" data-name="exp">Опыт</button>
+            <button class="advantages__btn" data-name="quality">Качество</button>
+            <button class="advantages__btn" data-name="support">Поддержка</button>
+            <button class="advantages__btn" data-name="time">Время</button>
+        </div>
+        <div class="advantages__content">
+            <div class="advantages__content-block" data-name="exp">
+                <div class="advantages__content-img">
+                    <img class="advantages__img" src="img/lupa.png" alt="exp">
+                </div>
+                <p class="advantages__content-text">Каждый сотрудник имеет высокую квалификацию в области мобильной и веб-разработки, поэтому каждая работа анализируется, тестируется и вводится в эксплуатацию как и было запланировано.</p>
+            </div>
+            <div class="advantages__content-block advantages__content_hidden" data-name="quality">
+                <div class="advantages__content-img">
+                    <img class="advantages__img" src="img/target.png" alt="quality">
+                </div>
+                <p class="advantages__content-text">Отвечаем за результат вместе с вами. Нам важно создавать рабочие решения и помогать компаниям приносить пользу.</p>
+            </div>
+            <div class="advantages__content-block advantages__content_hidden" data-name="support">
+                <div class="advantages__content-img">
+                    <img class="advantages__img" src="img/email.png" alt="support">
+                </div>
+                <p class="advantages__content-text">Делаем приложения, с которыми удобно работать: наш код легко поддерживать и просто передать. Имеется вся необходимая документация к каждой функции. В случае необходимости тех. поддержка ответит на все интересующие Вас вопросы</p>
+            </div>
+            <div class="advantages__content-block advantages__content_hidden" data-name="time">
+                <div class="advantages__content-img">
+                    <img class="advantages__img" src="img/rocket.png" alt="time">
+                </div>
+                <p class="advantages__content-text">Разрабатываем приложение в обговариваемые или запланированные сроки выполнения работы.</p>
+            </div>
+        </div>
+    </section>
 
     <!-- SCRIPTS -->
-    <script src="js/main.js"></script>
+    <script type="module" src="js/main.js"></script>
 </body>
 </html>
