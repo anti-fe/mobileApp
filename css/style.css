@@ -268,9 +268,9 @@ a {text-decoration: none; color: var(--color-black)}
 }
 .advantages__content {
     position: relative;
+    margin-top: 90px;
 }
 .advantages__content-block {
-    margin-top: 90px;
     display: flex;
 }
 .advantages__content-img {
@@ -284,5 +284,67 @@ a {text-decoration: none; color: var(--color-black)}
 .advantages__content_hidden {
     position: absolute;
     opacity: 0;
+    top: 0
+}
+.services {
+
+}
+.services__card {
+    background-color: var(--color-lightGray);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    max-width: 550px;
+    padding: 30px 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    transition: all .2s ease;
+    -webkit-transition: all .2s ease;
+    -moz-transition: all .2s ease;
+    -ms-transition: all .2s ease;
+    -o-transition: all .2s ease;
+    cursor: pointer;
+    position: relative;
+}
+.services__card:hover {
+    color: #fff;
+    background-color: var(--color-accent);
+}
+.services__card:hover .services__card-name, .services__card:hover .services__card-descr {
+    color: #fff;
+}
+.services__card:hover.services__card::before {
+    width: 100%;
+    height: 100%; 
+
+}
+
+.services__card:hover .services__card-btn {
+    display: block;
+}
+.services__card-name {
+    font-size: 26px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--color-black);
+    margin-bottom: 20px;
+}
+.services__card-descr {
+    max-width: 500px;
+    color: var(--color-black);
+    margin-bottom: 20px;
+}
+.services__card-btn {
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    color: #fff;
+    font-weight: bold;
+    font-size: 22px;
+    align-self: flex-end;
+    display: none;
 }
 
