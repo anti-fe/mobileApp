@@ -12,6 +12,34 @@
     <title>MobileApp</title>
 </head>
 <body>
+    <!-- UP-BTN -->
+    <a class="to-up">
+        <svg width="31" height="18" viewBox="0 0 31 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1 16.5L15.5 2L30 16.5" stroke="white" stroke-width="2"/>
+        </svg>
+    </a>
+    <!-- MODAL-WINDOW -->
+    <div class="bg-modal">
+        <div class="modal-window">
+            <div class="modal-window__close">
+                <div class="modal-window__close-line"></div>
+                <div class="modal-window__close-line"></div>
+            </div>
+            <h2 class="modal-window__title">Аналитика</h2>
+            <form class="modal-window__form">
+                <input type="hidden" value="">
+                <div class="modal-window__inp-box">
+                    <input type="text" class="modal-window__input" name="name" id="name-inp" placeholder="Введите имя">
+                    <p class="modal-window__error-message"></p>
+                </div>
+                <div class="modal-window__inp-box">
+                    <input type="text" class="modal-window__input" name="phone" id="phone-inp" placeholder="Введите номер телефона">
+                    <p class="modal-window__error-message"></p>
+                </div>
+                <button class="modal-window__btn">Заказать звонок</button>
+            </form>
+        </div>
+    </div>
     <!-- HEADER -->
     <header class="header">
         <div class="header__content container">
@@ -28,7 +56,7 @@
             </nav>
             <div class="header__contacts">
                 <h3 class="header__phone">+7(997)-648-52-60</h3>
-                <button class="header__btn">Заказать звонок</button>
+                <button class="header__btn" data-name="Консультация">Заказать звонок</button>
             </div>
         </div>
     </header>
@@ -97,9 +125,36 @@
     <!-- SERVICES -->
     <h2 class="services__title section-title container">Услуги по разработке приложений</h2>
     <section class="services container">
-        <div class="services__card">
+        <div class="services__card" data-name="Аналитика">
             <h3 class="services__card-name">Аналитика</h3>
             <p class="services__card-descr">Проводим конкурентный анализ рынка, используем лучшие решения для создания первоклассных продуктов.</p>
+            <button class="services__card-btn">Подробнее</button>
+        </div>
+        <div class="services__card" data-name="Проектирование">
+            <h3 class="services__card-name">Проектирование</h3>
+            <p class="services__card-descr">Реализуем бизнес-задачи с помощью дружественных пользователю интерфейсов на базе аналитики.</p>
+            <button class="services__card-btn">Подробнее</button>
+        </div>
+        <div class="services__card" data-name="Дизайн">
+            <h3 class="services__card-name">Дизайн</h3>
+            <p class="services__card-descr">Создаем лучший пользовательский опыт. Рисуем удобные и понятные интерфейсы, которые работают.</p>
+            <button class="services__card-btn">Подробнее</button>
+        </div>
+        <div class="services__card" data-name="Разработка">
+            <h3 class="services__card-name">Разработка</h3>
+            <p class="services__card-descr">Воплощаем приложение в коде. Пишем чистый и стабильный код, интегрируем его с технологиями заказчика.</p>
+            <button class="services__card-btn">Подробнее</button>
+        </div>
+        <div class="services__card" data-name="Тестирование">
+            <h3 class="services__card-name">Тестирование</h3>
+            <p class="services__card-descr">Тестируем сервис на разных устройствах и гарантируем выпуск качественного продукта точно в срок.
+            </p>
+            <button class="services__card-btn">Подробнее</button>
+        </div>
+        <div class="services__card" data-name="Продвижение">
+            <h3 class="services__card-name">Продвижение</h3>
+            <p class="services__card-descr">Поддерживаем и улучшаем продукт на основе обратной связи. Тысячи скачиваний и вывод в топы сторов.
+            </p>
             <button class="services__card-btn">Подробнее</button>
         </div>
     </section>
