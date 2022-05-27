@@ -505,7 +505,7 @@ a {text-decoration: none; color: var(--color-black)}
 }
 .modal-window__inp-error {outline: 2px solid red;}
 .modal-window__inp-success {outline: 2px solid green;}
-
+.steps-dev {margin-bottom: 200px;}
 .steps-dev__title {margin-bottom: 90px;}
 .swiper {
     width: 100%;
@@ -571,4 +571,17 @@ a {text-decoration: none; color: var(--color-black)}
 }
 .swiper-button-next {
     right: 50px !important;
+}
+.calculator__title{margin-bottom: 90px}
+.choice-user-calculator{
+    max-width: 1307px;
+    background: #FFFFFF;
+    border: 1px solid #FCFCFC;
+    border-radius: 20px 0px 0px 20px;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.04), 0px 4px 8px rgba(0, 0, 0, 0.06);
+}
+.cards-calculator{
+    background: #FCFCFC;
+    border-radius: 10px;
+    width:326.19px
 }
