@@ -9,6 +9,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- SWIPER -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+
     <title>MobileApp</title>
 </head>
 <body>
@@ -158,9 +161,60 @@
             <button class="services__card-btn">Подробнее</button>
         </div>
     </section>
-
-    
+    <!-- STEPS-DEVELOPMENT -->
+    <h2 class="steps-dev__title section-title container">Этапы разработки приложения</h2>
+    <section class="steps-dev container">
+        <div class="swiper mySwiper steps-dev__slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="slide__num">1</div>
+                    <div class="slide__info">
+                        <h3 class="slide__title">Идея</h3>
+                        <p class="slide__descr">На этом первоначальном этапе крайне важно получить согласованное и непротиворечивое описание того, что будет создано впоследствии. Мы обсуждаем и формализуем идею, предлагаем оптимальные пути реализации и вместе составляем список базовых требований.</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="slide__num">2</div>
+                    <div class="slide__info">
+                        <h3 class="slide__title">Проектирование</h3>
+                        <p class="slide__descr">Создаем карту, которая наглядно демонстрирует все функции продукта, и прототипы, которые отражают все экраны приложения и схему переходов по ним. В зависимости от наших потребностей прототипы могут быть статичными или интерактивными.</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="slide__num">3</div>
+                    <div class="slide__info">
+                        <h3 class="slide__title">Дизайн</h3>
+                        <p class="slide__descr">Создаем дизайн всех экранов будущего приложения и отрисовываем различные состояния для всех сценариев пользования. Все элементы графического интерфейса мы подвергаем юзабилити-исследованию, чтобы удостовериться, что принятые дизайн-решения эргономичны и позволяют пользователю эффективно решать свои задачи.</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="slide__num">4</div>
+                    <div class="slide__info">
+                        <h3 class="slide__title">Разработка</h3>
+                        <p class="slide__descr">Процесс создания мобильного приложения состоит из нескольких этапов, на каждом этапе вы получаете промежуточные сборки приложения для ознакомления. В мобильной разработке мы пишем чистый нативный код и не используем кросс-платформенные решения.</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="slide__num">5</div>
+                    <div class="slide__info">
+                        <h3 class="slide__title">Тестирование</h3>
+                        <p class="slide__descr">Приложение передается вам для тестирования и проверки соответствия ТЗ. Приложение устанавливается на ваши тестовые устройства, и работает в точности так же, как если бы было скачано из Google.Play или AppStore. Все несоответствия и найденные проблемы исправляются на этом этапе.</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="slide__num">6</div>
+                    <div class="slide__info">
+                        <h3 class="slide__title">Публикация</h3>
+                        <p class="slide__descr">После приемки заказчиком приложения и подписания акта приемки – приложение передается в AppStore или Google.Play для публикации. Каждое приложение перед публикацией проверяется командами Google и Apple. Приемка в Google.Play занимает не больше суток, процесс приемки в AppStore занимает  не менее недели.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-next btn-next btn-slider"></div>
+            <div class="swiper-button-prev btn-prev btn-slider"></div>
+        </div>
+    </section>
     <!-- SCRIPTS -->
     <script type="module" src="js/main.js"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 </body>
 </html>

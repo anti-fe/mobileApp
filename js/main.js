@@ -2,7 +2,8 @@ import advantages from './advantages.js';
 import openModalWindow from './openModalWindow.js';
 import toFirstScreen from './toFirstScreen.js';
 import closeModalWindow from './closeModalWindow.js';
-import sendForm from './sendForm.js'
+import sendForm from './sendForm.js';
+import slider from './slider.js';
 
 const getCall = localStorage.getItem('call') ? JSON.parse(localStorage.getItem('call')) : '';
 getCall ? console.log(getCall) : NaN;
@@ -41,3 +42,5 @@ modalBtn.addEventListener('click', (e)=>{
     e.preventDefault();
     sendForm(modalWindow);
 })
+//SLIDER
+slider();
