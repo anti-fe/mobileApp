@@ -217,7 +217,7 @@
     <h2 class="calculator__title section-title container">Калькулятор расчета примерной стоимости работ</h2>
     <section class="calculator container">
         <div class="calculator__choice">
-            <div class="calculator__choice-section" data-id="1">
+            <div class="calculator__choice-section calculator__choice_active" data-id="1">
                 <h3 class="calculator__section-title">Выберите платформу</h3>
                 <div class="calculator__cards-list">
                     <div class="calculator__card calculator__card_active" data-cardvalue="android">
@@ -237,6 +237,89 @@
                         <svg width="80" height="96" viewBox="0 0 80 96" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M66.8841 50.3233C66.8383 42.5179 70.3748 36.6352 77.5164 32.2976C73.5222 26.5751 67.4793 23.4278 59.5136 22.8212C51.9714 22.226 43.7196 27.216 40.6981 27.216C37.505 27.216 30.2031 23.0272 24.4578 23.0272C12.6009 23.2103 0 32.4807 0 51.3419C0 56.9156 1.0186 62.6724 3.05579 68.6009C5.77968 76.4063 15.5994 95.5308 25.8426 95.2217C31.1989 95.0959 34.9871 91.422 41.9571 91.422C48.721 91.422 52.2232 95.2217 58.1974 95.2217C68.5322 95.073 77.4134 77.6881 80 69.8598C66.1402 63.3248 66.8841 50.7239 66.8841 50.3233ZM54.8555 15.4163C60.6581 8.52647 60.1316 2.25465 59.9599 0C54.8326 0.297568 48.9041 3.4907 45.5279 7.41631C41.8083 11.628 39.6223 16.8355 40.0916 22.7067C45.6309 23.1302 50.6896 20.2804 54.8555 15.4163Z" fill="black"/>
                         </svg>  
+                    </div>
+                </div>
+            </div>
+            <div class="calculator__choice-section" data-id="2">
+                <h3 class="calculator__section-title">Необходимость регистрации / авторизации</h3>
+                <div class="calculator__cards-list">
+                    <div class="calculator__card" data-cardvalue="yes">
+                        <span class="calculator__card-value">Да</span>
+                    </div>
+                    <div class="calculator__card calculator__card_active" data-cardvalue="no">
+                        <span class="calculator__card-value">Нет</span>
+                    </div>
+                </div>
+            </div>
+            <div class="calculator__choice-section" data-id="3">
+                <h3 class="calculator__section-title">Выбор анимации 2D / 3D</h3>
+                <div class="calculator__cards-list">
+                    <div class="calculator__card calculator__card_active" data-cardvalue="animation">
+                        <span class="calculator__card-value">2D</span>
+                    </div>
+                    <div class="calculator__card" data-cardvalue="animation">
+                        <span class="calculator__card-value">3D</span>
+                    </div>
+                    <div class="calculator__card" data-cardvalue="no">
+                        <span class="calculator__card-value">Без анимации</span>
+                    </div>
+                </div>
+            </div>
+            <div class="calculator__choice-section" data-id="4">
+                <h3 class="calculator__section-title">Выбор экранов приложения</h3>
+                <div class="calculator__checkbox-list">
+                    <div class="calculator__checkbox calculator__checkbox_active" data-cardvalue="display">
+                        <span class="calculator__checkbox-value">Личный кабинет</span>
+                    </div>
+                    <div class="calculator__checkbox" data-cardvalue="display">
+                        <span class="calculator__checkbox-value">Групповые чаты</span>
+                    </div>
+                    <div class="calculator__checkbox" data-cardvalue="display">
+                        <span class="calculator__checkbox-value">Отправка сообщений</span>
+                    </div>
+                    <div class="calculator__checkbox" data-cardvalue="display">
+                        <span class="calculator__checkbox-value">Отзывы</span>
+                    </div>
+                    <div class="calculator__checkbox" data-cardvalue="display">
+                        <span class="calculator__checkbox-value">Список подписок</span>
+                    </div>
+                    <div class="calculator__checkbox" data-cardvalue="display">
+                        <span class="calculator__checkbox-value">Список друзей</span>
+                    </div>
+                    <div class="calculator__checkbox" data-cardvalue="display">
+                        <span class="calculator__checkbox-value">Список новостей</span>
+                    </div>
+                    <div class="calculator__checkbox" data-cardvalue="display">
+                        <span class="calculator__checkbox-value">Популярное</span>
+                    </div>
+                </div>
+            </div>
+            <div class="calculator__choice-section" data-id="5">
+                <h3 class="calculator__section-title">Выбор дополнительных функций</h3>
+                <div class="calculator__checkbox-list">
+                    <div class="calculator__checkbox calculator__checkbox_active" data-cardvalue="func">
+                        <span class="calculator__checkbox-value">Оплата</span>
+                    </div>
+                    <div class="calculator__checkbox" data-cardvalue="func">
+                        <span class="calculator__checkbox-value">Видеозвонки</span>
+                    </div>
+                    <div class="calculator__checkbox" data-cardvalue="func">
+                        <span class="calculator__checkbox-value">Редактирование новости</span>
+                    </div>
+                    <div class="calculator__checkbox" data-cardvalue="func">
+                        <span class="calculator__checkbox-value">Деактивация учетной записи</span>
+                    </div>
+                    <div class="calculator__checkbox" data-cardvalue="func">
+                        <span class="calculator__checkbox-value">Ночной режим</span>
+                    </div>
+                    <div class="calculator__checkbox" data-cardvalue="func">
+                        <span class="calculator__checkbox-value">Смена языка</span>
+                    </div>
+                    <div class="calculator__checkbox" data-cardvalue="func">
+                        <span class="calculator__checkbox-value">Автовоспроизведение</span>
+                    </div>
+                    <div class="calculator__checkbox" data-cardvalue="func">
+                        <span class="calculator__checkbox-value">Скрытие чатов</span>
                     </div>
                 </div>
             </div>

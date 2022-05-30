@@ -11,7 +11,9 @@ export default function calculation(e) {
                 const androidTime = +time.dataset['time'] + 50;
 
                 price.innerHTML = setTextPrice(androidPrice.toString());
-                time.innerHTML = `${androidTime} ч`;
+                price.innerHTML = setTextPrice(androidPrice.toString());
+                time.dataset['time'] = `${androidTime}`;
+                price.dataset['price'] = `${androidPrice}`;
                 break;
         
             case 'ios':
@@ -19,14 +21,47 @@ export default function calculation(e) {
                 const iosTime = +time.dataset['time'] + 50;
 
                 price.innerHTML = setTextPrice(iosPrice.toString());
-                time.innerHTML = `${iosTime} ч`;
+                price.innerHTML = setTextPrice(iosPrice.toString());
+                time.dataset['time'] = `${iosTime}`;
+                price.dataset['price'] = `${iosPrice}`;
                 break;
             case 'androidIos':
                 const androidIosPrice = +price.dataset['price'] + 60000;
                 const androidIosTime = +time.dataset['time'] + 100;
 
                 price.innerHTML = setTextPrice(androidIosPrice.toString());
-                time.innerHTML = `${androidIosTime} ч`;
+                price.innerHTML = setTextPrice(androidIosPrice.toString());
+                time.dataset['time'] = `${androidIosTime}`;
+                price.dataset['price'] = `${androidIosPrice}`;
+                break;
+            case 'display':
+                const displayPrice = +price.dataset['price'] + 10000;
+                const displayTime = +time.dataset['time'] + 20;
+
+                price.innerHTML = setTextPrice(displayPrice.toString());
+                price.innerHTML = setTextPrice(displayPrice.toString());
+                time.dataset['time'] = `${displayTime}`;
+                price.dataset['price'] = `${displayPrice}`;
+                break;
+            case 'animation':
+                const animationPrice = +price.dataset['price'] + 10000;
+                const animationTime = +time.dataset['time'] + 20;
+
+                price.innerHTML = setTextPrice(animationPrice.toString());
+                price.innerHTML = setTextPrice(animationPrice.toString());
+                time.dataset['time'] = `${animationTime}`;
+                price.dataset['price'] = `${animationPrice}`;
+                break;
+            case 'yes':
+                const yesPrice = +price.dataset['price'] + 15000;
+                const yesTime = +time.dataset['time'] + 25;
+
+                price.innerHTML = setTextPrice(yesPrice.toString());
+                price.innerHTML = setTextPrice(yesPrice.toString());
+                time.dataset['time'] = `${yesTime}`;
+                price.dataset['price'] = `${yesPrice}`;
+                break;
+            case 'no':
                 break;
         }
     }

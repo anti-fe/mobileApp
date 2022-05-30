@@ -7,6 +7,7 @@ import slider from './slider.js';
 import choiceCard from './choiceCard.js';
 import calculation from './calculation.js';
 import nextCalculationSection from './nextCalculationSection.js';
+import choiceCheckbox from './choiceCheckbox.js';
 
 const getCall = localStorage.getItem('call') ? JSON.parse(localStorage.getItem('call')) : '';
 getCall ? console.log(getCall) : NaN;
@@ -53,6 +54,7 @@ slider();
 //CALCULATOR
 calculatorCont.addEventListener('click', (e)=>{
     choiceCard(e);
+    choiceCheckbox(e);
     calculation(e);
     if(e.target.closest('.calculator__next-btn')) {
         nextCalculationSection(e.target.closest('.calculator__next-btn'));
