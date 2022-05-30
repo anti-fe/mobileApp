@@ -22,6 +22,7 @@ const modalBtn = document.querySelector('.modal-window__btn');
 
 const calculatorCont = document.querySelector('.calculator');
 
+let mainPrice = 0;
 //TO-FIRST-SCREEN
 toFirstScreen();
 
@@ -53,10 +54,20 @@ modalBtn.addEventListener('click', (e)=>{
 slider();
 //CALCULATOR
 calculatorCont.addEventListener('click', (e)=>{
+
     choiceCard(e);
     choiceCheckbox(e);
-    calculation(e);
     if(e.target.closest('.calculator__next-btn')) {
-        nextCalculationSection(e.target.closest('.calculator__next-btn'));
+        const idSection = e.target.closest('.calculator__next-btn').dataset['count'];
+        const allChoiceSections = document.querySelectorAll('.calculator__choice-section');
+        allChoiceSections.forEach(item=>{
+            if(idSection === item.dataset['id']) {
+                let choicedCards = item.querySelectorAll('.calculator__card_active'); 
+                choicedCards.length <= 0 ? choicedCards = item.querySelectorAll('.calculator__checkbox_active') : NaN;
+                calculation(choicedCards);
+                return;
+            }
+        })
+        nextCalculationSection(e.target.closest('.calculator__next-btn'), allChoiceSections);
     }
 })
