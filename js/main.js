@@ -8,6 +8,7 @@ import choiceCard from './choiceCard.js';
 import calculation from './calculation.js';
 import nextCalculationSection from './nextCalculationSection.js';
 import choiceCheckbox from './choiceCheckbox.js';
+import accordion from './accordion.js';
 
 const getCall = localStorage.getItem('call') ? JSON.parse(localStorage.getItem('call')) : '';
 getCall ? console.log(getCall) : NaN;
@@ -74,3 +75,5 @@ calculatorCont.addEventListener('click', (e)=>{
         nextCalculationSection(e.target.closest('.calculator__next-btn'), allChoiceSections);
     }
 })
+//ACCORDION
+accordion()

@@ -825,6 +825,26 @@ a {text-decoration: none; color: var(--color-black)}
 
 .reviews {margin-bottom: 200px}
 
+.faq__panel-heading {
+    padding: 20px 90px;
+    gap: 10px;
+    padding: 20px 0 20px 90px;
+    background: #5E8AFD;
+    border-radius: 10px 10px 0px 0px;
+    color: white
+}
+.faq__panel-accordion{
+    display:none
+}
+.faq__panel{
+    margin-bottom: 30px;
+}
+.faq__panel:last-child{
+    margin-bottom: 0;
+}
+
+
+
 @media (max-width: 1475px){
     .calculator {flex-direction: column}
     .calculator__result {
