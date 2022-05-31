@@ -577,6 +577,7 @@ a {text-decoration: none; color: var(--color-black)}
 .calculator {
    display: flex;
    justify-content: space-between; 
+   margin-bottom: 200px
 }
 .calculator__choice-section {
     position: absolute;
@@ -772,6 +773,55 @@ a {text-decoration: none; color: var(--color-black)}
     font-family: Arial, Helvetica, sans-serif;
     color: var(--color-black);
 }
+.portfolio__card {
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 20px 33px 20px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    transition: all .2s ease;
+    -webkit-transition: all .2s ease;
+    -moz-transition: all .2s ease;
+    -ms-transition: all .2s ease;
+    -o-transition: all .2s ease;
+}
+.portfolio__card:hover {
+    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
+}
+
+.portfolio {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    gap: 20px;
+}
+.portfolio__card-text {
+    font-size: 22px;
+    color: white;
+}
+.portfolio__card {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.portfolio__card:nth-child(1) {background-image: url('../img/Rectangle 19.png');}
+.portfolio__card:nth-child(2) {background-image: url('../img/Rectangle 19(1).png');}
+.portfolio__card:nth-child(3) {background-image: url('../img/Rectangle 19(2).png');}
+.portfolio__card:nth-child(4) {background-image: url('../img/Rectangle 19(3).png');}
+.portfolio__card:nth-child(5) {background-image: url('../img/Rectangle 19(4).png');}
+.portfolio__card:nth-child(6) {background-image: url('../img/Rectangle 19(5).png');}
+.portfolio__card:nth-child(7) {background-image: url('../img/Rectangle 19(6).png');}
+.portfolio__card:nth-child(8) {background-image: url('../img/Rectangle 19(7).png');}
+
 @media (max-width: 1475px){
     .calculator {flex-direction: column}
     .calculator__result {
