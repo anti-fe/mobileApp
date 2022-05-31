@@ -803,6 +803,7 @@ a {text-decoration: none; color: var(--color-black)}
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
     gap: 20px;
+    margin-bottom: 200px;
 }
 .portfolio__card-text {
     font-size: 22px;
@@ -821,6 +822,8 @@ a {text-decoration: none; color: var(--color-black)}
 .portfolio__card:nth-child(6) {background-image: url('../img/Rectangle 19(5).png');}
 .portfolio__card:nth-child(7) {background-image: url('../img/Rectangle 19(6).png');}
 .portfolio__card:nth-child(8) {background-image: url('../img/Rectangle 19(7).png');}
+
+.reviews {margin-bottom: 200px}
 
 @media (max-width: 1475px){
     .calculator {flex-direction: column}
