@@ -22,7 +22,6 @@ const modalBtn = document.querySelector('.modal-window__btn');
 
 const calculatorCont = document.querySelector('.calculator');
 
-let mainPrice = 0;
 //TO-FIRST-SCREEN
 toFirstScreen();
 
@@ -33,12 +32,16 @@ advantagesCont.addEventListener('click',(e)=>{
     }
 })
 // MODAl-WINDOW
+modalWindow.addEventListener('click', (e)=>{
+    //Закрытие при нажатии на пустую область
+    !e.target.closest('.modal-window') ? closeModalWindow(modalWindow) : NaN;
+})
 getCallBtn.addEventListener('click', (e)=>{
     e.preventDefault();
     openModalWindow(getCallBtn)
 });
 closeModalBtn.addEventListener('click', (e)=>{
-    closeModalWindow(closeModalBtn, modalWindow);
+    closeModalWindow(modalWindow);
 })
 servicesCont.addEventListener('click', (e)=>{
     if(e.target.closest('.services__card')) {
