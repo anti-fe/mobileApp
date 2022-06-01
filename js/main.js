@@ -23,6 +23,8 @@ const modalBtn = document.querySelector('.modal-window__btn');
 
 const calculatorCont = document.querySelector('.calculator');
 
+const faqCont = document.querySelector('.faq-group');
+
 //TO-FIRST-SCREEN
 toFirstScreen();
 
